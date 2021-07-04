@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/*importando usando google fonts */
+@import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua&display=swap');
+@font-face {
+	font-family: 'Fontedologomaneiromsm';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body {
+	background-color: rgb(135,206,250);
+	color: rgba(0,0,0,1);
+	font-family: 'Arial' , sans-serif;
+			
+}
+
+div#interface {
+	width: 1200px;
+	margin :-10px auto 0px auto;
+	box-shadow: 1px 1px 7px grey;
+	background-color:white;
+	padding: 10px 10px 10px 10px;
+}
+
+p {
+	text-align: justify;
+	text-indent: 50px;
+
+}
+/*FORMATAÇÃO DE IMAGEM */
+/* borda da figure*/
+/* box shadow para sombrear largura, altura ,espalhamento e cor*/
+figure.fotomaneira {
+	position: relative;
+	border: 10px solid #bfbfbf;
+	box-shadow: 1px 1px 6px black;
+}
+/* manter as proporçoes da imagem */
+figure.fotomaneira img {
+	width: 100%;
+	height: 100% 
+}
+
+figure.fotomaneira figcaption {
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.3);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	opacity: 0;
+	transition: 1s;
+}
+
+figure.fotomaneira:hover figcaption {
+	opacity: 1;
+}
+
+/* FORMATAÇÃO MENU */
+nav#menu ol {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 657px;
+}
+
+nav#menu li {
+	display: inline-block;
+	background-color:lightgrey ;
+	padding: 10px;
+	margin: 1px;
+	transition: background-color 0.7s;
+}
+
+nav#menu h1 {
+	display: none;
+}
+
+nav#menu li:hover  {
+	background-color: lightblue;
+}
+
+nav#menu a {
+	color: black;
+	text-decoration: none;
+}
+
+nav#menu a:hover {
+	color: white;
+}
+/*formatacao cabecalho, parte de cima */
+header#cabecalho {
+	border-bottom: #bfbfbf solid;
+	height: 150px;
+	background-image: url("../_imagens/glass-logo-peq.jpg") ;
+	background-repeat: no-repeat;
+	background-position: 0px 100px;
+}
+
+header#cabecalho h1 {
+	font-family: 'Fontedologomaneiromsm',sans-serif;
+	text-shadow: 3px 3px 3px #bfbfbf;
+	font-size: 40px;
+	padding: 0px;
+	margin-bottom: 0px;
+	color: rgba(0,0,0,.7);
+}
+
+header#cabecalho h2 {
+	font-family: 'Uncial Antiqua', cursive;
+	font-size: 20px;
+	padding: 0px;
+	margin-top: 0px;
+	color: rgba(0,0,0,.5);
+}
+
+header#cabecalho img#icone {
+	position: absolute;
+	left:1080px;
+	top: 80px;
+}
+
+section#secao {
+	float: left;
+	width: 600px;
+	padding: 11px;
+	border-right: 3px solid #bfbfbf;
+}
+aside#lateral {
+	width: 540px;
+	float: right;
+	background-color: #cccccc;
+	padding: 7px;
+	margin: 10px 5px 10px 8px;
+}
+
+aside#lateral h1 {
+	font-family: 'Fontedologomaneiromsm',sans-serif;
+	color: rgba(0,0,0,.7);
+	margin-top: 0px;
+	font-size: 20pt;
+}
+
+aside#lateral h2 {
+	background-color: rgba(0,0,0,.5);
+	color: white;
+	padding: 5px;
+	font-size: 13pt;
+}
+
+footer#rodape {
+	clear: both;
+}
+
+footer#rodape p {
+	text-align: center;
+	padding: 10px;
+	border-top: 3px solid #bfbfbf;
+}
+
+table#tabela {
+	border: 1px solid black;
+	border-spacing: 0px;
+	margin: auto;
+}
+
+table#tabela td {
+	border: 1px solid black;
+	text-align: center;
+	padding: 7px;
+}
+
+table#tabela td.cole {
+	background-color: #666666;
+	color: white;
+	border-color: #666666;
+	vertical-align: top;
+	text-align: right;
+}
+
+table#tabela td.cold {
+	text-align: left;
+	background-color: #bfbfbf;
+}
+
+table#tabela caption {
+	color: #666666;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+table#tabela caption span {
+	font-size: 9pt;
+	display: block;
+	float: right;
+	margin-top: 8px;
+	color: black;
+}
+
+article#noticia-principal h2 {
+	background-color: #cccccc;
+	padding: 4px;
+	font-size: 15pt;
+	color: rgba(0,0,0,.8);
+	font-weight: bolder;
+}
+
+header#noticia-cabecalho h3{
+	font-size: 13pt;
+	color: #cccccc;
+	font-weight: bolder;
+	margin-top: 0px;
+}
+
+header#noticia-cabecalho h1 {
+	font-family: 'Fontedologomaneiromsm' ,sans-serif;
+	margin-bottom: 0px;
+	color: rgba(0,0,0,.7);
+	padding: 0px;
+	font-size: 20pt;
+}
+
+header#noticia-cabecalho h2 {
+	background-color: white;
+	font-size: 10pt;
+	text-align: right;
+	color: rgba(0,0,0,.6);
+}

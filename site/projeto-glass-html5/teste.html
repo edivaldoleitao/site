@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>pagina maneira</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>acenda a lampada</h1>
+	<!-- javascript integrado no documento html -->
+	<!-- o documento pode ter várias areas de script-->
+	<script type="text/javascript">
+
+		var x =0;
+		function acenderlampada() {
+			if (x!= 1) {
+				document.getElementById("lamp").src = "_imagens/lampada-acesa.jpg";	
+			}
+		}
+		function apagarlampada() {
+			if (x != 1) {
+				document.getElementById("lamp").src = "_imagens/lampada-apagada.jpg";
+			}
+		}
+		function quebrarlampada() {
+			document.getElementById("lamp").src = "_imagens/lampada-quebrada.jpg";
+			x = 1;
+		}
+	</script>
+	<img src="_imagens/lampada-apagada.jpg" id="lamp" onmouseover = "acenderlampada()" 
+	onmouseout = "apagarlampada()" onclick = "quebrarlampada()"/>
+</body>
+</html>
+
